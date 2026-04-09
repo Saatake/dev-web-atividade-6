@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="space-header">
       <div className="logo-container">
-        <h1><span>Cosmic</span>.App</h1>
+        <h1><span>Atividade 6</span></h1>
       </div>
       <nav>
         <ul className="nav-links">
