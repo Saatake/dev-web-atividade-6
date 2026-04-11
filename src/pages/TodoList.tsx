@@ -29,12 +29,12 @@ function TodoList() {
 
   return (
     <div className="todo-container">
-      <h2>Módulo de Tarefas</h2>
+      <h2>To-Do List</h2>
       
       <div className="input-group">
         <input 
           type="text" 
-          placeholder="Adicionar nova diretriz espacial..." 
+          placeholder="Adicionar tarefas" 
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && addTask()}
@@ -44,7 +44,7 @@ function TodoList() {
 
       <ul className="task-list">
         {tasks.length === 0 ? (
-          <p style={{ color: '#a0aec0', fontSize: '0.9rem' }}>Nenhuma diretriz registrada no terminal.</p>
+          <p style={{ color: '#a0aec0', fontSize: '0.9rem' }}>Nenhuma tarefa registrada.</p>
         ) : (
           tasks.map(task => (
             <li key={task.id} className="task-item">
