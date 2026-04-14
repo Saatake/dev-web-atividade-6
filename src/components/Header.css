@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 3rem;
+  padding: 1.25rem 2rem;
   background: rgba(15, 15, 30, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 .logo-container h1 {
@@ -25,18 +26,19 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem; 
+  flex-wrap: nowrap;                         
 }
 
 .nav-links a {
   text-decoration: none;
   color: #a0aec0;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 20px;
-  border: 1px solid transparent;
+  white-space: nowrap;
   transition: all 0.3s ease;
 }
 
