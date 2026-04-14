@@ -91,3 +91,9 @@
   background: rgba(255, 77, 77, 0.1);
   box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
 }
+
+@media (max-width: 600px) {
+  .input-group { flex-direction: column; }
+  .btn-add { padding: 1rem; }
+  .todo-container { padding: 1.5rem; }
+}

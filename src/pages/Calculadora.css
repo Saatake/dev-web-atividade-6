@@ -1,13 +1,12 @@
 .calculator-container {
   background: rgba(15, 15, 30, 0.6);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2rem;
   width: 360px;
   margin: 0 auto;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -27,11 +26,13 @@
   text-align: right;
   margin-bottom: 1.5rem;
   height: 110px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-} 
+  box-sizing: border-box; 
+}
 
 .display-prev {
   color: #a0aec0;
@@ -47,11 +48,11 @@
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
   line-height: 1.2;
-  padding-top: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-bottom: 5px; 
+  width: 100%;
+  display: block;
 }
 
 .keypad {
@@ -96,4 +97,9 @@
 
 .btn-zero {
   grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+  .display-current { font-size: 2rem; }
+  .btn-calc { padding: 0.8rem 0; font-size: 1.1rem; }
 }

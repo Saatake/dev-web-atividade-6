@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main style={{ padding: '3rem', maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<TodoList />} />
           <Route path="/contador" element={<Contador />} />

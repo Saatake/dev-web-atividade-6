@@ -48,3 +48,17 @@
   background: rgba(157, 78, 221, 0.15);
   box-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
 }
+
+@media (max-width: 768px) {
+  .space-header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
