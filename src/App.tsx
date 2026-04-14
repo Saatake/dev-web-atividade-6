@@ -4,6 +4,7 @@ import TodoList from './pages/TodoList';
 import Contador from './pages/Contador';
 import JogoDaVelha from './pages/JogoDaVelha';
 import Calculadora from './pages/Calculadora';
+import BuscadorCep from './pages/BuscadorCep';
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path="/contador" element={<Contador />} />
           <Route path="/jogo" element={<JogoDaVelha />} />
           <Route path="/calculadora" element= {<Calculadora />} />
-          <Route path="/cep" element={<h2 style={{color: '#9d4edd'}}>Módulo Buscador CEP em construção...</h2>} />
+          <Route path="/cep" element={<BuscadorCep />} />
         </Routes>
       </main>
     </Router>
